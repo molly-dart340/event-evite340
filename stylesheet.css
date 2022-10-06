@@ -3,6 +3,7 @@
   padding: 25px;
   overflow: hidden;
   position: absolute;
+  display: block;
   top: 0;
   bottom: 0;
   width: 100%;
