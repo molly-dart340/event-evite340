@@ -1,8 +1,12 @@
 .box {
-  width: 1520px;
-  height: 710px;
   margin: 10px;
   padding: 25px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%; 
   border: 5px solid #261914;
 }
 
