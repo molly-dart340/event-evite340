@@ -1,6 +1,8 @@
 .box {
-  width: 1520px;
-  height: 710px;
+  width:1500px;
+  max-width:100%; 
+  overflow-x: scroll;
+  height:500px; 
   margin: 0 auto;
   padding: 25px;
   left: 50%;
