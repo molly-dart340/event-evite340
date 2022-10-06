@@ -1,10 +1,8 @@
 .box {
-  margin: 0 auto;
+  width: 1520px;
+  height: 710px;
+  margin: 10px;
   padding: 25px;
-  overflow: hidden;
-  position: absolute;
-  width: 50%;
-  height: 50%; 
   border: 5px solid #261914;
 }
 
