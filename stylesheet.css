@@ -1,7 +1,6 @@
 .box {
   width:1500px;
   max-width:100%; 
-  overflow-x: scroll;
   margin: auto;
   margin-top: 10%;
   padding: 25px;
