@@ -1,8 +1,12 @@
 .box {
   width: 1520px;
   height: 710px;
-  margin: auto;
+  margin: 0 auto;
   padding: 25px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%, -50%);
   border: 5px solid #261914;
 }
 
