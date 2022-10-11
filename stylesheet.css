@@ -1,8 +1,8 @@
 .box {
   margin: 0 auto;
   padding: 25px;
-  max-width: 25%;
-  max-height: 25%;
+  width: 1520px;
+  height: 710px;
   border: 5px solid #261914;
 }
 
@@ -213,4 +213,26 @@ canvas {
   position: relative;
   left: 70px;
   top: -520px;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Here you should set what size you want your div to be 
+when viewed on smartphone */
+/* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+/* Styles */
 }
