@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Meddon&display=swap" rel="stylesheet">
     <!-- End of styling for Google Fonts-->
+    <!-- These are the CDNs that help process the code from the content libraries of p5js-->
     <script src="https://cdn.jsdelivr.net/npm/p5@1.4.2/lib/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/addons/p5.sound.min.js"></script>
@@ -22,16 +23,24 @@
     <h1 id="heading">The Suarez and Wilson Wedding</h1>
     <p class="subtitle">This is an outdoor wedding affair at the morning golden hour. To curb environmental impact</p>
     <p class="subtitle">the couple has opted for this e-vite for the wedding. You can RSVP here and view</p>
-    <p class="subtitle">their wedding registry.</p>
+    <p class="subtitle">their wedding registry. If you will be attending, click the RSVP button.</p>
     <br>
     <!-- This is a video on how to stylize an image as a polaroid https://www.youtube.com/watch?v=XqVfFTQWkKA -->
     <figure>
-        <img src="assets/engagement1.jpg" alt="Couple gazing at each other lovingly">
+        <img src="/assets/engagement1.jpg" alt="Couple gazing at each other lovingly">
         <figcaption>Amelia & Zachary</figcaption>
         <figcaption id="weddingDate">9.22.23</figcaption>
     </figure>
     <script src="sketch.js" id="canvas"></script>
-    <button class="button">RSVP</button>
+    <button class="button" onclick="buttonClickFunction()">RSVP</button>
+    <!-- This little script sets up a JavaScript onClick function that gives you an alert and changes the background color of the button to let you 
+    know that you RSVPed-->
+    <script>
+        function buttonClickFunction() {
+          alert("You have RSVPed.");
+          document.getElementsByClassName("button")[0].style.backgroundColor = "#ffb400";
+        }
+        </script>
     <a href="https://www.theknot.com/registry" target="_blank" id="registryButton">Registry</a>
     <div class="rectangle">
         <p id="inviteLine">YOU ARE INVITED TO CELEBRATE</p>
