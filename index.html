@@ -20,60 +20,59 @@
 
 <body>
     <div class="box">
-    <h1 id="heading">The Suarez and Wilson Wedding</h1>
-    <p class="subtitle">This is an outdoor wedding affair at the morning golden hour. To curb environmental impact</p>
-    <p class="subtitle">the couple has opted for this e-vite for the wedding. You can RSVP here and view</p>
-    <p class="subtitle">their wedding registry. If you will be attending, click the RSVP button.</p>
-    <br>
-    <!-- This is a video on how to stylize an image as a polaroid https://www.youtube.com/watch?v=XqVfFTQWkKA -->
-    <! -- This script triggers a mouse over and mouse out change of pictures -->
-   <script>
-    function mouseOverImage() {
-    document.getElementById("photo").src = "assets/engagement2.jpg";
-    }
-     function mouseOutImage() {
-    document.getElementById("photo").src = "assets/engagement1.jpg";
-    }
-   </script>
-   <figure>
-        <img id="photo" src="assets/engagement1.jpg" onmouseover="mouseOverImage()" onmouseout="mouseOutImage()" />
-        <figcaption>Amelia & Zachary</figcaption>
-        <figcaption id="weddingDate">9.22.23</figcaption>
-    </figure>
-    <script src="sketch.js" id="canvas"></script>
-    <button class="button" onclick="buttonClickFunction()">RSVP</button>
-    <!-- This little script sets up a JavaScript onClick function that gives you an alert and changes the background color of the button to let you 
-    know that you RSVPed-->
-    <script>
-        function buttonClickFunction() {
-          alert("You have RSVPed.");
-          document.getElementsByClassName("button")[0].style.backgroundColor = "#ffb400";
-        }
+        <h1 id="heading">The Suarez and Wilson Wedding</h1>
+        <p class="subtitle">This is an outdoor <span id="wordChange1">wedding</span> affair at the morning golden hour.
+            To curb environmental impact</p>
+        <p class="subtitle">the couple has opted for this e-vite for the <span id="wordChange2">wedding</span> . You can
+            RSVP here and view</p>
+        <p class="subtitle">their <span id="wordChange3">wedding</span> registry. If you will be attending, click the
+            RSVP button.</p>
+        <br>
+        <!-- This is a video on how to stylize an image as a polaroid https://www.youtube.com/watch?v=XqVfFTQWkKA -->
+        <figure>
+            <img src="/assets/engagement1.jpg" alt="Couple gazing at each other lovingly">
+            <figcaption>Amelia & Zachary</figcaption>
+            <figcaption id="weddingDate">9.22.23</figcaption>
+        </figure>
+        <script src="sketch.js" id="canvas"></script>
+        <button class="button" id="RSVP" onclick="buttonClickFunction()">RSVP</button>
+        <!-- This little script sets up a JavaScript onClick function that gives you an alert and changes the background color of the button to let you 
+    know that you RSVPed. The button is also disabled upon one initial click. -->
+        <script>
+            function buttonClickFunction() {
+                alert("You have RSVPed.");
+                document.getElementsByClassName("button")[0].style.backgroundColor = "#ffb400";
+                /* I would have liked to use just a class to consolidate the amount of lines here but I had to use three Ids instead */
+                document.getElementById("wordChange1").innerHTML = "adventure";
+                document.getElementById("wordChange2").innerHTML = "adventure";
+                document.getElementById("wordChange3").innerHTML = "adventure";
+                document.getElementById("RSVP").disabled = "true";
+            }
         </script>
-    <a href="https://www.theknot.com/registry" target="_blank" id="registryButton">Registry</a>
-    <div class="rectangle">
-        <p id="inviteLine">YOU ARE INVITED TO CELEBRATE</p>
-        <br>
-        <p id="adventureLine">THE NEW ADVENTURE OF</p>
-        <br>
-        <p id="brideFirstName">AMELIA</p>
-        <br>
-        <p id="brideFullName">MARIE SUAREZ</p>
-        <br>
-        <p id="and">&</p>
-        <br>
-        <p id="groomFirstName">ZACHARY</p>
-        <br>
-        <p id="groomFullName">EDWARD WILSON</p>
-        <br>
-        <hr>
-        <p id="date">Saturday, June 23, 2023</p>
-        <br>
-        <p id="time">At 7:00 AM in the morning during golden hour</p>
-        <br>
-        <p id="location">In Ridgeway State Park, Golden, CO</p>
-        <hr id="end">
-    </div>
+        <a href="https://www.theknot.com/registry" target="_blank" id="registryButton">Registry</a>
+        <div class="rectangle">
+            <p id="inviteLine">YOU ARE INVITED TO CELEBRATE</p>
+            <br>
+            <p id="adventureLine">THE NEW ADVENTURE OF</p>
+            <br>
+            <p id="brideFirstName">AMELIA</p>
+            <br>
+            <p id="brideFullName">MARIE SUAREZ</p>
+            <br>
+            <p id="and">&</p>
+            <br>
+            <p id="groomFirstName">ZACHARY</p>
+            <br>
+            <p id="groomFullName">EDWARD WILSON</p>
+            <br>
+            <hr>
+            <p id="date">Saturday, June 23, 2023</p>
+            <br>
+            <p id="time">At 7:00 AM in the morning during golden hour</p>
+            <br>
+            <p id="location">In Ridgeway State Park, Golden, CO</p>
+            <hr id="end">
+        </div>
     </div>
 </body>
 
