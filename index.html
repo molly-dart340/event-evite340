@@ -29,8 +29,16 @@
             RSVP button.</p>
         <br>
         <!-- This is a video on how to stylize an image as a polaroid https://www.youtube.com/watch?v=XqVfFTQWkKA -->
+        <script>
+            function changePic1() {
+            document.getElementById("myImg").src = "assets/engagement1.jpg";
+             }
+             function changePic22(){
+            document.getElementById("myImg").src = "assets/engagement2.jpg";
+   }           
+        </script>
         <figure>
-            <img src="/assets/engagement1.jpg" alt="Couple gazing at each other lovingly">
+            <img src="assets/engagement1.jpg" onmouseover="changePic1()" onmouseout="changePic22()" id="myImg" alt="Couple gazing at each other lovingly">
             <figcaption>Amelia & Zachary</figcaption>
             <figcaption id="weddingDate">9.22.23</figcaption>
         </figure>
